@@ -2,7 +2,7 @@
 function base64($data) {
     return rtrim(strtr(base64_encode($data), '+/', '-_'), '=');
 }
-function login($username,$password) {
+function login($knicholson197,$password) {
 	$header = ['alg'=>'HS256','typ'=>'JWT'];
 	$enheaders = base64(json_encode($header));
 	$time = time();
